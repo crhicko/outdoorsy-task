@@ -1,6 +1,3 @@
-require_relative "user"
-require_relative "vehicle"
-
 class DataRow
     attr_accessor :user, :vehicle
 

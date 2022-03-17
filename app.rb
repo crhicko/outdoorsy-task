@@ -2,7 +2,7 @@ require_relative "lib/vehicle"
 require_relative "lib/user"
 require_relative "lib/fileparser"
 require_relative "lib/datarow"
-require_relative "lib/util.rb"
+require_relative "lib/util"
 
 def parse_input()
     fileParsers = Array.new
@@ -30,7 +30,6 @@ def parse_input()
 end
 
 def print_data(data)
-    # puts "#{row[0].get_formatted_data} #{row[1].get_formatted_data}"
     data.each do |row|
         puts row.get_formatted_data
     end
